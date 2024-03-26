@@ -16,3 +16,9 @@ Dự án này sử dụng các công nghệ sau:
 HTML/CSS: Để tạo giao diện người dùng
 JavaScript: Để thêm các tính năng tương tác
 Framework: React
+
+![image](https://github.com/HNHNA/Instagram-Clone/assets/90271973/2e2f345b-8ef5-477e-89e2-6beec048312e)
+![image](https://github.com/HNHNA/Instagram-Clone/assets/90271973/86c85534-f593-4c17-93a2-bbf274270276)
+![image](https://github.com/HNHNA/Instagram-Clone/assets/90271973/925df1f9-66e2-46ed-a081-3bb3b785a000)
+
+
