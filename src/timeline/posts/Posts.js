@@ -1,6 +1,5 @@
 import React from 'react'
 import './Posts.css'
-// import { Avatar } from '@mui/material'
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz"
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder"
 import ChatBubbleOutlineIcon from "@mui/icons-material/ChatBubbleOutline"
@@ -9,35 +8,34 @@ import BookmarkBorderIcon from "@mui/icons-material/BookmarkBorder"
 import { Avatar } from '@mui/material'
 
 
-function Posts( user, postImage, likes, timestamp ) {
+function Posts( user) {
   // console.log(user);
   return (
     <div className='post'>
       <div className='post_header'>
         <div className='post_headerAuthor'>
-        {/* <Avatar style={{ marginRight: "10px" }}>
-            {user.charAt(0).toUpperCase()}
+        <Avatar style={{ marginRight: "10px" }}>
+            {user.user.charAt(0).toUpperCase()}
           </Avatar>{" "}
-          {user} • <span>{timestamp}</span> */}
-          <Avatar>R</Avatar>
+          {user.user} • <span>{user.timestamp}</span>
         </div>
         <MoreHorizIcon />
       </div>
         <div className='post_image'>
-          <img src={postImage} alt="Post Image" />
+        <img src={user.postImage} alt="Mô tả hình ảnh" />
         </div>
         <div className='post_footer'>
-        <div className="post__footerIcons">
-          <div className="post__iconsMain">
+        <div className="post_footerIcons">
+          <div className="post_iconsMain">
             <FavoriteBorderIcon className="postIcon" />
             <ChatBubbleOutlineIcon className="postIcon" />
             <TelegramIcon className="postIcon" />
           </div>
-          <div className="post__iconSave">
+          <div className="post_iconSave">
             <BookmarkBorderIcon className="postIcon" />
           </div>
         </div>
-        Liked by {likes} people.
+        Liked by {user.likes} people.
         </div>
     </div>
   )
